@@ -15,6 +15,7 @@ int main()
 	cout << "6.Dar un par de pasos\n";
 	cout << "7.Girar el cuerpo a la derecha y girar la perilla\n";
 	cout << "8.Finalmente tirar de la puerta\n";
+	return 88;
 
 
 
