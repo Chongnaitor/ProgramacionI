@@ -1,4 +1,0 @@
-﻿  Source.cpp
-c:\users\chong\documents\programacioni\libro\libro\source.cpp(35): warning C4244: 'argumento': conversión de 'double' a 'unsigned int'; posible pérdida de datos
-c:\users\chong\documents\programacioni\libro\libro\source.cpp(39): warning C4244: 'argumento': conversión de 'double' a 'unsigned int'; posible pérdida de datos
-  Libro.vcxproj -> C:\Users\Chong\Documents\ProgramacionI\Libro\Debug\Capitulo 4.exe
