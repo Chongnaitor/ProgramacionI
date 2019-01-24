@@ -1,0 +1,5 @@
+﻿  Capitulo4.cpp
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(49): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(40): warning C4101: 'iterador': variable local sin referencia
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(20): warning C4101: 'Elemento': variable local sin referencia
+  Trash.vcxproj -> C:\Users\Chong\Documents\ProgramacionI\Trash\Debug\Escuela.exe
