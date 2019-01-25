@@ -1,5 +1,9 @@
 ﻿  Capitulo4.cpp
-c:\users\chong\documents\programacioni\trash\capitulo4.cpp(49): warning C4018: '<': no coinciden signed/unsigned
-c:\users\chong\documents\programacioni\trash\capitulo4.cpp(40): warning C4101: 'iterador': variable local sin referencia
-c:\users\chong\documents\programacioni\trash\capitulo4.cpp(20): warning C4101: 'Elemento': variable local sin referencia
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(50): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(57): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(64): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(71): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(42): warning C4101: 'iterador': variable local sin referencia
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(21): warning C4101: 'Elemento': variable local sin referencia
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(109): warning C4715: 'ejercicio2': no todas las rutas de acceso de control devuelven un valor
   Trash.vcxproj -> C:\Users\Chong\Documents\ProgramacionI\Trash\Debug\Escuela.exe

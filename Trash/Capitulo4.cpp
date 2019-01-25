@@ -1,6 +1,6 @@
 #include "Includes.h"
 using namespace std;
-int Drill()
+int drill()
 {
 
 	
@@ -8,14 +8,15 @@ int Drill()
 	
 	
 	
-
-		cout << "Introduce un  numero entero, cuando quieras parar presiona la tecla | \n";
-		
 	
 		
 
 
-		vector<double>Comparador;
+		vector<double>Comparador;	
+		string unidades;
+		cout << "Ahora elige unidades en que unidades lo quieres: \n";
+		cin >> unidades;
+		cout << " Ahora lista los numeros que quieras y despues pon | para continuar: \n ";
 		double num1;
 		for (double Elemento; cin >>num1;)
 			Comparador.push_back(num1);
@@ -36,24 +37,47 @@ int Drill()
 		{
 			cout << Comparador.front() << " es el mas pequeno y " << Comparador.back() << " es el mas grande\n";
 		}
-		string unidades;
+		
+	
 		double iterador;
 		cin.ignore();
 		cin.get();
-		cout << "Ahora elige en que unidades lo quieres: \n";
 		
-		cin >> unidades;
+		
 		
 		if (unidades == "m")
 		{
 			for (int  i=0; i < Comparador.size(); i++)
 			{
-				cout << Comparador[i] << "m";
+				cout << Comparador[i] << " m ";
 			}
 		}
+		else if (unidades == "ft")
+		{
+			for (int i = 0; i < Comparador.size(); i++)
+			{
+				cout << Comparador[i] << " ft ";
+			}
+		}
+		else if (unidades == "in")
+		{
+			for (int i = 0; i < Comparador.size(); i++)
+			{
+				cout << Comparador[i] << " in ";
+			}
+		}
+		else if (unidades == "cm")
+		{
+			for (int i = 0; i < Comparador.size(); i++)
+			{
+				cout << Comparador[i] << " cm ";
+			}
+		}
+		cin.ignore();
+		cin.get();
 		return 2;
 }
-int main()
+int ejercicio2()
 {
 	vector<double> temps;             
 	for (double temp; cin>>temp; )                      
@@ -82,4 +106,16 @@ int main()
 		}
 
 	}
+}
+int main()
+{
+	double suma=0;
+	vector<double>Ciudades{150,89,70,53,98};
+	for (double i : Ciudades) suma += i;
+	{
+		cout << suma;
+	}
+	
+	cin.ignore();
+		cin.get();
 }
