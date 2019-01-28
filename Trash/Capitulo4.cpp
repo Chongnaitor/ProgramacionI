@@ -1130,6 +1130,7 @@ int ejercicio5()
 	cout << "Bienvenido a la calculadora\n";
 	cout << "Pon dos numeros y la operacion que quieras:\n";
 	cin >> Numero2 >> Numero1>>Operacion;
+
 	if (Operacion == '+')
 	{
 		cout << Numero1 + Numero2;
@@ -1170,7 +1171,154 @@ int Ejercicio6()
 }
 int main()
 {
+	cout << "Elige si quieres escribir un numero de uno al nueve en letras o en digito\n";
+	cout << "escribe Digito o Numero:\n";
+	string Eleccion;
+	cin >> Eleccion;
+	if (Eleccion == "Digito" || Eleccion == "digito")
+	{
+		double Numero1;
+		double Numero2;
+		char Operacion;
+		cout << "Bienvenido a la calculadora\n";
+		cout << "Pon dos numeros y la operacion que quieras:\n";
+		cin >> Numero2 >> Numero1 >> Operacion;
 
+		if (Operacion == '+')
+		{
+			cout << Numero1 + Numero2;
+		}
+		else if (Operacion == '-')
+		{
+			cout << Numero1 - Numero2;
+		}
+		else if (Operacion == '/')
+		{
+			cout << Numero1 / Numero2;
+		}
+		else if (Operacion == '*')
+		{
+			cout << Numero1 * Numero2;
+		}
+		else
+		{
+			simple_error("Eso no va ahi");
+		}
+		cin.ignore();
+		cin.get();
+	}
+	else if (Eleccion == "Numero" || Eleccion == "numero")
+	{
+		cout << "Bienvendido a la calculadora de letras\n";
+		cout << "Escribe los numeros que quieres del 1 al 10\n";
+		string Numero1;
+		string Numero2;
+		int Numero3=0;
+		int Numero4=0;
+		cin >> Numero1 >> Numero2;
+		if (Numero1 == "uno" || Numero1 == "Uno")
+		{
+			 Numero3 +=1;
+		}
+		else if (Numero1 == "dos" || Numero1 == "Dos")
+		{
+			 Numero3 +=2;
+		}
+		else if (Numero1 == "Tres" || Numero1 == "tres")
+		{
+			 Numero3 +=3;
+		}
+		else if (Numero1 == "cuatro" || Numero1 == "Cuatro")
+		{
+			 Numero3 +=4;
+		}
+		else if (Numero1 == "cinco" || Numero1 == "Cinco")
+		{
+			Numero3 +=5;
+		}
+		else if (Numero1 == "seis" || Numero1 == "Seis")
+		{
+			 Numero3 += 6;
+		}
+		else if (Numero1 == "siete" || Numero1 == "Siete")
+		{
+			 Numero3 += 7;
+		}
+		else if (Numero1 == "ocho" || Numero1 == "Ocho")
+		{
+			Numero3+= 8;
+		}
+		else if (Numero1 == "Nueve" || Numero1 == "nueve")
+		{
+			int Numero3 = 9;
+		}
+		else if (Numero1 == "Diez" || Numero1 == "diez")
+		{
+			 Numero3 += 10;
+		}
+		
+		
+		if (Numero2 == "uno" || Numero2 == "Uno")
+		{
+			Numero4 +=1;
+		}
+		else if (Numero2 == "dos" || Numero2 == "Dos")
+		{
+			 Numero4 += 2;
+		}
+		else if (Numero2 == "Tres" || Numero2 == "tres")
+		{
+			 Numero4 +=3;
+		}
+		else if (Numero2 == "cuatro" || Numero2 == "Cuatro")
+		{
+			 Numero4 += 4;
+		}
+		else if (Numero2 == "cinco" || Numero2 == "Cinco")
+		{
+		 Numero4 += 5;
+		}
+		else if (Numero2 == "seis" || Numero2 == "Seis")
+		{
+		 Numero4+= 6;
+		}
+		else if (Numero2 == "siete" || Numero2 == "Siete")
+		{
+		 Numero2 += 7;
+		}
+		else if (Numero2 == "ocho" || Numero2 == "Ocho")
+		{
+		 Numero4 += 8;
+		}
+		else if (Numero2 == "Nueve" || Numero2 == "nueve")
+		{
+			 Numero4 += 9;
+		}
+		else if (Numero2 == "Diez" || Numero2 == "diez")
+		{
+			Numero4 += 10;
+		}
+		cout << "Ahora escribe en simbolo de la operacion\n";
+		char simobolo;
+		cin >> simobolo;
+		switch (simobolo)
+		{
+		case '+':
+			cout << Numero3 + Numero4;
+			break;
+		case '-':
+			cout << Numero3 - Numero4;
+			break;
+		case '/':
+			cout << Numero3 / Numero4;
+			break;
+		case '*':
+			cout << Numero3 * Numero4;
+			break;
+		}
+
+		
+	}
 }
 		
 
