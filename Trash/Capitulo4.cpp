@@ -1169,7 +1169,7 @@ int Ejercicio6()
 
 
 }
-int main()
+int Ejercicio7()
 {
 	cout << "Elige si quieres escribir un numero de uno al nueve en letras o en digito\n";
 	cout << "escribe Digito o Numero:\n";
@@ -1317,9 +1317,122 @@ int main()
 			break;
 		}
 
+		cin.get();
+		cin.ignore();
+		return 88;
+	}
+}
+
+int Ejercicio8()
+{
+	cout << "Bienvenidos a la calculadora de arroz\n";
+	cout<<"Introduce un numero y la caluculadora te dira si es suficiente arroz para el inventor\n";
+	int Numeros = 0;
+	int contador = 1;
+	int NumerosMultiplicados;
+	cin >> Numeros;
+	while (contador != Numeros)
+	{
+		contador++;
+		NumerosMultiplicados = contador*2;
+	}
+
+
+
+	if (NumerosMultiplicados == 1000)
+	{
+		cout << Numeros << " cuadros fueron necesarios para darle 1000 granos de arroz al inventor\n";
+
+	}
+	else if (NumerosMultiplicados == 1000000)
+	{
+		cout << Numeros << " cuadros fueron necesarios para darle 1,000,000 granos de arroz al inventor\n";
 		
 	}
+	else if (NumerosMultiplicados == 1000000000)
+	{
+		cout << Numeros << " cuadros fueron necesarios para darle 1,000,000,000 granos de arroz al inventor\n";
+
+	}
+	else if(NumerosMultiplicados<1000)
+	{
+		cout << "Te falto arroz";
+	}
+	else if (NumerosMultiplicados > 1000000000)
+	{
+		cout << "Te pasaste de arroz";
+	}
+	else
+	{
+		cout << "Tal vez estas a la mitad";
+	}
+	cin.get();
+	cin.ignore();
+	return 55;
 }
 		
 
 	
+int ejercicio9()
+{
+	cout << "Bienvenidos a la calculadora de arroz\n";
+	cout << "Introduce un numero y la caluculadora te dira si es suficiente arroz para el inventor\n";
+	int Numeros = 0;
+	int contador = 1;
+	int NumerosMultiplicados;
+	cin >> Numeros;
+	while (contador != Numeros)
+	{
+		contador++;
+		NumerosMultiplicados = contador * 2;
+	}
+	cout << NumerosMultiplicados;
+	cin.get();
+	cin.ignore();
+	return 54;
+}
+
+int ejericio10()
+{
+	cout << "Bienvenidos a la calculadora de arroz\n";
+	cout << "Introduce un numero y la caluculadora te dira si es suficiente arroz para el inventor\n";
+	double Numeros = 0;
+	double contador = 1;
+	double NumerosMultiplicados;
+	cin >> Numeros;
+	while (contador != Numeros)
+	{
+		contador++;
+		NumerosMultiplicados = contador * 2;
+	}
+	cout << NumerosMultiplicados;
+	cin.get();
+	cin.ignore();
+	return 21;
+}
+
+int main()
+{
+	vector<string>Piedras{ "Piedra","Papel","Tijeras" };
+	string Usuario;
+	int PC;
+	cout << "Escribe piedra papel o tijeras\n";
+	cin >> Usuario;
+	
+		if (Usuario == Piedras[0])
+		{
+			cout << Piedras[0];
+			cout << "Gano la PC\n";
+		}
+		else if (Usuario == Piedras[1])
+		{
+			cout << Piedras[1];
+			cout << "Ganaste\n";
+		}
+		else if (Usuario == Piedras[2])
+		{
+			cout << Piedras[2];
+			cout << "Ganaste\n";
+		}
+	
+}

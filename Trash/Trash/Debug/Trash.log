@@ -22,5 +22,7 @@ c:\users\chong\documents\programacioni\trash\capitulo4.cpp(181): warning C4018: 
 c:\users\chong\documents\programacioni\trash\capitulo4.cpp(195): warning C4018: '<': no coinciden signed/unsigned
 c:\users\chong\documents\programacioni\trash\capitulo4.cpp(212): warning C4018: '<': no coinciden signed/unsigned
 c:\users\chong\documents\programacioni\trash\capitulo4.cpp(222): warning C4018: '<': no coinciden signed/unsigned
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(1418): warning C4101: 'PC': variable local sin referencia
 c:\users\chong\documents\programacioni\trash\capitulo4.cpp(109): warning C4715: 'ejercicio2': no todas las rutas de acceso de control devuelven un valor
+c:\users\chong\documents\programacioni\trash\capitulo4.cpp(1324): warning C4715: 'Ejercicio7': no todas las rutas de acceso de control devuelven un valor
   Trash.vcxproj -> C:\Users\Chong\Documents\ProgramacionI\Trash\Debug\Escuela.exe
