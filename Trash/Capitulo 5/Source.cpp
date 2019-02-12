@@ -2,6 +2,11 @@
 #include <vector>
 #include <string>
 using namespace std;
+void error(string s)
+
+{
+	throw runtime_error(s);
+}
 int Drill() 
 {
 	try 
@@ -689,19 +694,61 @@ int Drill25()
 }
 
 
-double Pascal(double c)
+double Kelvin(double c)
 {
+	if (c < -273.15)error("Estas pasandote de la temperatura minima");
 	int k = c + 273.15;
 	return k;
 
 }
 
+double Celcius(double k)
+{
+	if (k < 0)error("Estas pasandote de la temperatura minima");
+	int c = k - 273.15;
+	return c;
+
+}
+
+double CelciusAFaranheit(double c)
+{
+	double a = c  * 9 / 5 + 32;
+	return a;
+}
+
+double FarenheitACelcius(double c)
+{
+	double a = c - 32 * 5 / 9;
+}
+int Ejercicio6()
+{
+	char Eleccion;
+	cout << "Elige si quieres pasar a de Kelvin a celcius presionando K, o de celsius a Kelvin presionando C:\n";
+	cin >> Eleccion;
+	if (Eleccion == 'K' || Eleccion == 'k')
+	{
+		cout << "Pon el numero;\n";
+		double c = 0;
+		cin >> c;
+		double k = Kelvin(c);
+		cout << k;
+		cin.ignore();
+		cin.get();
+
+	}
+	else if (Eleccion == 'C' || Eleccion == 'c')
+	{
+		cout << "Pon el numero;\n";
+		double c = 0;
+		cin >> c;
+		double k = Celcius(c);
+		cout << k;
+		cin.ignore();
+		cin.get();
+	}
+	
+}
 int main()
 {
-	double c = 0;
-	cin >> c;
-	double k = Pascal(c);
-	cout << k;
-	cin.ignore();
-	cin.get();
+
 }
