@@ -719,6 +719,7 @@ double CelciusAFaranheit(double c)
 double FarenheitACelcius(double c)
 {
 	double a = c - 32 * 5 / 9;
+	return a;
 }
 int Ejercicio6()
 {
@@ -746,9 +747,42 @@ int Ejercicio6()
 		cin.ignore();
 		cin.get();
 	}
-	
+	return 2;
 }
+int Ejercicio8()
+{
+	cout << "Escribe cuantos numeros quieres que se sumen:\n";
+	int a = 0;
+	cin >> a;
+	cout << "Ingresa una serie de numeros y cuando termine presiona !:\n";
+	vector<double> Numeros;
+	for (double i = 0; cin >> i;)
+		Numeros.push_back(i);
+	
+	
+		for (int c = 0; c < Numeros.size(); c++)
+		{
+			int b = Numeros[c];
+			a = 0;
+			a = b;
+			cout << a + b;
+		}
+		
+	
+	
+		return 6;
+}
+
+
 int main()
 {
-
+	
+	cout << "Ingresa hasta que numero de fibonacci quieres:\n";
+		int a = 0;
+		int b = 1;
+		cin >> a;
+		if (a > 1)
+		{
+			
+		}
 }
